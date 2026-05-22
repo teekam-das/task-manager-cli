@@ -4,4 +4,4 @@ def add_task(task):
     tasks.append(task)
     print("Task Added:", task)
 
-add_task("Complete SCD Assignment")
+add_task("SCD Assignment Started")
