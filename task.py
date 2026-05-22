@@ -1,7 +1,8 @@
-tasks = []
+tasks = ["SCD Assignment", "Git Practice", "Show Task Demo"]
 
-def add_task(task):
-    tasks.append(task)
-    print("Task Added:", task)
+def show_tasks():
+    print("All Tasks List:")
+    for task in tasks:
+        print("-", task)
 
-add_task("SCD Assignment Started")
+show_tasks()
