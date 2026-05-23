@@ -1,8 +1,12 @@
-tasks = ["SCD Assignment", "Git Practice", "Show Task Demo"]
+tasks = ["SCD Assignment", "Git Practice", "Show Task"]
 
-def show_tasks():
-    print("All Tasks List:")
-    for task in tasks:
-        print("-", task)
+def delete_task(task):
+    if task in tasks:
+        tasks.remove(task)
+        print("Deleted:", task)
+    else:
+        print("Task not found")
 
-show_tasks()
+delete_task("Git Practice")
+
+print("Remaining Tasks:", tasks)
